@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <Link to="/" className="text-xl font-heading font-bold">
               <span className="text-primary">{'<'}</span>
-              Dev
+              ARZ Dev
               <span className="text-primary">{'/>'}</span>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
@@ -60,7 +60,7 @@ export function Footer() {
         
         <div className="mt-8 border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-            <p>© {currentYear} Your Name. All rights reserved.</p>
+            <p>© {currentYear} Developed by Nepomuceno Arz</p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
               <span>•</span>

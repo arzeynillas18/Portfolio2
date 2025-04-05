@@ -10,35 +10,20 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: "Senior Frontend Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "January 2022 - Present",
-    description: "Led the frontend development of a SaaS platform that increased user engagement by 45%. Implemented performance optimizations resulting in a 30% improvement in load times. Mentored junior developers and established frontend best practices.",
-    technologies: ["React", "TypeScript", "GraphQL", "Next.js", "Tailwind CSS"]
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Solutions Co.",
+    title: "Freelance Frontend Developer",
+    company: "Client of the Internet",
     location: "Remote",
-    period: "March 2020 - December 2021",
-    description: "Developed responsive web applications with modern JavaScript frameworks. Collaborated with UX designers to implement pixel-perfect interfaces. Participated in code reviews and contributed to the company's component library.",
-    technologies: ["Vue.js", "JavaScript", "SCSS", "REST APIs", "Jest"]
+    period: "January 2023 - Present",
+    description: "specializing in modern web technologies like React, TypeScript, JavaScript, Next.js, and Tailwind CSS. I build fast, responsive, and scalable web applications with clean, maintainable code. Whether you need a dynamic single-page app, a performant website, or a seamless user interface, I deliver high-quality solutions tailored to your needs. Lets bring your ideas to life!",
+    technologies: ["React", "TypeScript","JavasSCript", , "Next.js", "Tailwind CSS",]
   },
   {
-    title: "Full Stack Developer",
-    company: "WebCraft Agency",
-    location: "Boston, MA",
-    period: "June 2018 - February 2020",
-    description: "Built full-stack applications for various clients across industries. Designed and implemented database schemas. Created RESTful APIs and integrated third-party services. Deployed and maintained applications on cloud platforms.",
-    technologies: ["Node.js", "Express", "MongoDB", "React", "AWS"]
+    title: "Freelance Full Stack Developer",
+    company: "Various Clients of the Internet",
+    location: "Remote",
+    period: "March 2024 - Present",
+    description: "Developed responsive web applications with modern JavaScript frameworks. Collaborated with UX designers to implement pixel-perfect interfaces.",
+    technologies: ["Next.js", "JavaScript", "SCSS", "Firebase", "MongodB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySql" , "Java"], 
   },
-  {
-    title: "Junior Web Developer",
-    company: "Creative Studios",
-    location: "New York, NY",
-    period: "August 2016 - May 2018",
-    description: "Developed and maintained client websites. Collaborated with the design team to implement responsive layouts. Optimized website performance and ensured cross-browser compatibility.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
-  }
+  
 ];

@@ -41,11 +41,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="outline" asChild>
-          <Link to={`/projects/${project.id}`}>
-            View Details
-          </Link>
-        </Button>
+      <Button variant="outline" asChild>
+      <Link
+        to={`/projects/${project.id}`}
+        className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-slate-950 text-slate-400 border border-slate-400 border-b-4 rounded-md group"
+      >
+        <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+          <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+        </span>
+        <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+          <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+        </span>
+        <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-slate-600 rounded-md group-hover:translate-x-0"></span>
+        <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+          View Details
+        </span>
+        <span className="bg-slate-400 shadow-slate-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+      </Link>
+    </Button>
+
         <div className="flex space-x-2">
           {project.github && (
             <Button size="icon" variant="ghost" asChild>

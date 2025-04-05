@@ -9,7 +9,9 @@ import { Button } from '@/components/ui/button';
 import { 
   Github, 
   Linkedin, 
-  Mail, 
+  Mail,
+  Twitter,
+  Facebook, 
   Download, 
   ArrowDown,
   Calendar,
@@ -70,21 +72,36 @@ export default function Home() {
               <div className="md:w-1/2 space-y-6 animate-fade-in">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                   <span className="block text-primary">Hi, I'm</span> 
-                  John Doe
+                  Nepomuceno Arzey 
                 </h1>
                 <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-                  Full Stack Developer
+                  Full Stack Software Engineer
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-xl">
                   I build accessible, user-friendly web applications with modern technologies.
                   Passionate about creating digital experiences that are both functional and beautiful.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button asChild size="lg" className="gap-2">
-                    <a href="#contact">
-                      Get in Touch <Mail className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
+                <Button asChild size="lg" className="gap-2">
+                <a
+                  href="#contact"
+                  className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-slate-950 text-slate-400 border border-slate-400 border-b-4 rounded-md group"
+                >
+                  <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                    <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                  </span>
+                  <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                    <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-slate-600 rounded-md group-hover:translate-x-0"></span>
+                  <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                    Get in Touch
+                  </span>
+                  <Mail className="ml-2 h-4 w-4" />
+                  <span className="bg-slate-400 shadow-slate-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                </a>
+              </Button>
+
                   <Button asChild variant="outline" size="lg" className="gap-2">
                     <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                       Resume <Download className="ml-2 h-4 w-4" />
@@ -93,7 +110,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-4 pt-4">
                   <a 
-                    href="https://github.com/" 
+                    href="https://github.com/arzeynillas18" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="GitHub"
@@ -102,7 +119,7 @@ export default function Home() {
                     <Github className="h-6 w-6" />
                   </a>
                   <a 
-                    href="https://linkedin.com/" 
+                    href="https://www.linkedin.com/in/arzey-nepomuceno-038322250/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -111,22 +128,41 @@ export default function Home() {
                     <Linkedin className="h-6 w-6" />
                   </a>
                   <a 
-                    href="mailto:hello@example.com" 
+                    href="mailto:arzeynepomuceno@gmail.com" 
                     aria-label="Email"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     <Mail className="h-6 w-6" />
                   </a>
+                  <a 
+                    href="https://x.com/ArzeyNepomuceno" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Twitter"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <Twitter className="h-6 w-6" />
+                  </a>
+                  <a 
+                    href="https://web.facebook.com/arzeynilllas2025?_rd" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <Facebook className="h-6 w-6" />
+                  </a>
                 </div>
               </div>
               <div className="md:w-1/2 flex justify-center md:justify-end animate-fade-in">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" 
-                    alt="John Doe" 
-                    className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-background"
-                  />
-                </div>
+              <div className="relative w-96 h-96 md:w-[500px] md:h-[600px] rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+            <img 
+              src="../../pic.gif" 
+              alt="ARZ Dev" 
+              className="w-80 h-80 md:w-[350px] md:h-[470px] rounded-full object-cover border-4 border-background"
+            />
+          </div>
+
               </div>
             </div>
             
@@ -149,21 +185,37 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-lg">
-                  I'm a passionate Full Stack Developer with 6+ years of experience in building web applications that are not only functional but also user-friendly and accessible.
+                My name is Arzey Nepomuceno. I am an aspiring professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude.
+                 I love to learn and explore new technologies and am passionate about problem-solving. 
                 </p>
                 <p className="text-lg">
-                  My journey in web development started with a curiosity about how websites work. That curiosity evolved into a career where I get to build solutions that make a real impact.
+                I love almost all the stacks of web application development and love to make the web more open to the world. 
                 </p>
                 <p className="text-lg">
-                  When I'm not coding, you can find me hiking in the mountains, reading sci-fi novels, or experimenting with new cooking recipes.
+                My core skill is based on JavaScript, and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button asChild className="gap-2">
-                    <a href="#experience">
-                      My Experience <Briefcase className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
+                <Button asChild className="gap-2">
+              <a
+                href="#experience"
+                className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-slate-950 text-slate-400 border border-slate-400 border-b-4 rounded-md group"
+              >
+                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                </span>
+                <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                </span>
+                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-slate-600 rounded-md group-hover:translate-x-0"></span>
+                <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                  My Experience
+                </span>
+                <Briefcase className="ml-2 h-4 w-4" />
+                <span className="bg-slate-400 shadow-slate-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+              </a>
+            </Button>
+
                   <Button asChild variant="outline" className="gap-2">
                     <a href="#skills">
                       My Skills <Code className="ml-2 h-4 w-4" />
@@ -174,16 +226,16 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">6+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">2+</p>
                   <p className="text-lg font-medium">Years of Experience</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">50+</p>
-                  <p className="text-lg font-medium">Projects Completed</p>
+                  <p className="text-4xl font-bold text-primary mb-2">14+</p>
+                  <p className="text-lg font-medium">Projects Delivered</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">30+</p>
-                  <p className="text-lg font-medium">Happy Clients</p>
+                  <p className="text-4xl font-bold text-primary mb-2">13+</p>
+                  <p className="text-lg font-medium">Satisfied Clients</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
                   <p className="text-4xl font-bold text-primary mb-2">15+</p>
@@ -366,8 +418,8 @@ export default function Home() {
                       <Mail className="h-5 w-5 mr-3 text-primary" />
                       <div>
                         <p className="font-medium">Email</p>
-                        <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary">
-                          hello@example.com
+                        <a href="mailto:arzeynepomuceno@gmail.com" className="text-muted-foreground hover:text-primary">
+                          arzeynepomuceno@gmail.com
                         </a>
                       </div>
                     </div>
@@ -377,12 +429,12 @@ export default function Home() {
                       <div>
                         <p className="font-medium">LinkedIn</p>
                         <a 
-                          href="https://linkedin.com/" 
+                          href="https://www.linkedin.com/in/arzey-nepomuceno-038322250/" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-primary"
                         >
-                          linkedin.com/in/johndoe
+                          linkedin.com/in/arzey-nepomuceno
                         </a>
                       </div>
                     </div>
@@ -392,12 +444,27 @@ export default function Home() {
                       <div>
                         <p className="font-medium">GitHub</p>
                         <a 
-                          href="https://github.com/" 
+                          href="https://github.com/arzeynillas18" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-primary"
                         >
-                          github.com/johndoe
+                          github.com/arzeynillas18
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <Twitter className="h-5 w-5 mr-3 text-primary" />
+                      <div>
+                        <p className="font-medium">Twitter</p>
+                        <a 
+                          href="https://x.com/ArzeyNepomuceno" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary"
+                        >
+                          x.com/ArzeyNepomuceno
                         </a>
                       </div>
                     </div>
@@ -409,7 +476,7 @@ export default function Home() {
                   <div className="flex items-center space-x-2">
                     <div className="relative">
                       <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                      <div className="w-3 h-3 bg-secondary rounded-full absolute top-0 left-0 animate-ping opacity-75"></div>
+                      <div className="w-3 h-3 bg-secondary rounded-full absolute top-0 left-0 animate-ping opacity-95"></div>
                     </div>
                     <p>Available for freelance work</p>
                   </div>

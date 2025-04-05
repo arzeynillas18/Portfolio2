@@ -10,42 +10,41 @@ export const skills: Skill[] = [
   { name: 'TypeScript', category: 'frontend' },
   { name: 'React', category: 'frontend' },
   { name: 'Next.js', category: 'frontend' },
-  { name: 'Vue.js', category: 'frontend' },
   { name: 'Tailwind CSS', category: 'frontend' },
-  { name: 'Framer Motion', category: 'frontend' },
+  {name: 'Material UI', category: 'frontend'},
+  { name: 'Vite', category: 'frontend' },
+
+
 
   // Backend
   { name: 'Node.js', category: 'backend' },
   { name: 'Express', category: 'backend' },
   { name: 'Python', category: 'backend' },
   { name: 'Django', category: 'backend' },
-  { name: 'GraphQL', category: 'backend' },
+  { name: 'Java', category: 'backend' },
   { name: 'REST API', category: 'backend' },
   { name: 'MongoDB', category: 'backend' },
   { name: 'PostgreSQL', category: 'backend' },
+  { name: 'MySQL', category: 'backend' },
+  { name: 'Firebase', category: 'backend' },
 
   // Mobile
-  { name: 'React Native', category: 'mobile' },
-  { name: 'Flutter', category: 'mobile' },
-  { name: 'iOS', category: 'mobile' },
   { name: 'Android', category: 'mobile' },
 
   // DevOps
   { name: 'Git', category: 'devops' },
-  { name: 'Docker', category: 'devops' },
-  { name: 'AWS', category: 'devops' },
-  { name: 'CI/CD', category: 'devops' },
-  { name: 'Kubernetes', category: 'devops' },
+  
 
   // Design
-  { name: 'Figma', category: 'design' },
+  { name: 'Canva', category: 'design' },
   { name: 'UI/UX', category: 'design' },
-  { name: 'Adobe XD', category: 'design' },
 
   // Other
-  { name: 'Agile', category: 'other' },
-  { name: 'Scrum', category: 'other' },
-  { name: 'TDD', category: 'other' },
+  { name: 'Eslint', category: 'other' },
+  { name: 'Npm', category: 'other' },
+  { name: 'Github', category: 'other' },
+  { name: 'Vs Code', category: 'other' },
+  
 ];
 
 export const getSkillsByCategory = (category: Skill['category']) => {
