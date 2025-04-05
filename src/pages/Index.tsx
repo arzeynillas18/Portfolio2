@@ -26,7 +26,7 @@ import { experiences } from '@/data/experience';
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [visibleProjects, setVisibleProjects] = useState(projects.slice(0, 4));
+  const [visibleProjects, setVisibleProjects] = useState(projects.slice(0, 6));
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   useEffect(() => {
@@ -250,7 +250,7 @@ export default function Home() {
         <section id="skills" className="py-20">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="flex flex-col gap-4 mb-10">
-              <h2 className="text-3xl font-bold tracking-tight">My Skills</h2>
+              <h2 className="text-3xl font-bold tracking-tight">My Skills & ToolKit</h2>
               <div className="w-24 h-1 bg-primary rounded"></div>
             </div>
             
@@ -386,7 +386,7 @@ export default function Home() {
               ))}
             </div>
             
-            {projects.length > 4 && (
+            {projects.length > 6 && (
               <div className="flex justify-center mt-12">
                 <Button onClick={toggleProjects}>
                   {showAllProjects ? 'Show Less' : 'View More Projects'}

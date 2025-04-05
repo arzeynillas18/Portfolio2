@@ -128,7 +128,39 @@ export const projects: Project[] = [
     ],
     github: "https://github.com",
     demo: "https://example.com"
-  }
+  },
+
+  {
+    id: "trucking-rental-services",
+    title: "Trucking Rental Services Web App",
+    description: " JDTS is a reliable trucking services provider offering efficient, timely, and secure transportation solutions for businesses and individuals.",
+    longDescription: "JDTS is a professional trucking services company committed to delivering goods safely and on time. Whether for businesses needing regular cargo transport or individuals moving large items, JDTS ensures each delivery is handled with care and precision. Their team of skilled drivers and well-maintained trucks guarantees dependable service across various routes. With a focus on customer satisfaction and logistics efficiency, JDTS continues to be a trusted partner in the transportation industry.",
+    features: [
+      "Timely Deliveries – Ensures all shipments arrive on schedule through efficient route planning and coordination.",
+      "Safe & Secure Transport – Goods are handled with care and transported securely using well-maintained trucks.",
+      "Professional Drivers – Experienced and licensed drivers committed to providing top-notch service.",
+      "Flexible Services – Offers transportation solutions tailored to different cargo sizes and customer needs.",
+   
+    ],
+    tags: ["Service", "PostCSS", "Firebase", "CSS", "React", "Javascript"],
+    technologies: {
+      frontend: ["React", "Tailwind.Css", "Html", "Css", "Vite"],
+      backend: ["Firebase", "Json", "Javascript"],
+      deployment: ["Vercel"]
+    },
+    image: "../../projects/jdts1.png",
+    gallery: [
+      "../../projects/jdts1.png",
+      "../../projects/jdts2.png",
+      "../../projects/jdts3.png",
+      "../../projects/jdts4.png",
+      "../../projects/jdts5.png",
+      "../../projects/jdts6.png",
+    ],
+    github: "https://github.com/arzeynillas18/JDTS-Trucking-Web-Application.git",
+    demo: "https://jdts-trucking-web-application-r.vercel.app/"
+  },
+
 ];
 
 export function getProjectById(id: string): Project | undefined {
