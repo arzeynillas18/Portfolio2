@@ -161,6 +161,38 @@ export const projects: Project[] = [
     demo: "https://jdts-trucking-web-application-r.vercel.app/"
   },
 
+  {
+    id: "resort-website",
+    title: "Resort Website",
+    description: " JDTS is a reliable trucking services provider offering efficient, timely, and secure transportation solutions for businesses and individuals.",
+    longDescription: "JDTS is a professional trucking services company committed to delivering goods safely and on time. Whether for businesses needing regular cargo transport or individuals moving large items, JDTS ensures each delivery is handled with care and precision. Their team of skilled drivers and well-maintained trucks guarantees dependable service across various routes. With a focus on customer satisfaction and logistics efficiency, JDTS continues to be a trusted partner in the transportation industry.",
+    features: [
+      "Timely Deliveries – Ensures all shipments arrive on schedule through efficient route planning and coordination.",
+      "Safe & Secure Transport – Goods are handled with care and transported securely using well-maintained trucks.",
+      "Professional Drivers – Experienced and licensed drivers committed to providing top-notch service.",
+      "Flexible Services – Offers transportation solutions tailored to different cargo sizes and customer needs.",
+   
+    ],
+    tags: ["HTML", "CSS", "Tailwind Css","Javascript"],
+    technologies: {
+      frontend: ["HTML", "CSS", "Tailwind Css","Javascript"],
+      backend: [ ],
+      deployment: ["Vercel"]
+    },
+    image: "../../projects/mvr.png",
+    gallery: [
+
+      "../../projects/mvr.png",
+      "../../projects/mvr2.png",
+      "../../projects/mvr3.png",
+      "../../projects/mvr4.png",
+      "../../projects/mvr5.png",
+      "../../projects/mvr6.png",
+      
+    ],
+    github: "https://github.com/arzeynillas18/Majestique-View-Resort-Website.git",
+    demo: "https://majestique-view-resort.vercel.app/"
+  },
 ];
 
 export function getProjectById(id: string): Project | undefined {

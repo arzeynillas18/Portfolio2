@@ -1,6 +1,5 @@
-
 import { useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -13,11 +12,21 @@ export default function ProjectDetail() {
   const navigate = useNavigate();
   const project = getProjectById(id || '');
 
+  const scrollToSection = (sectionId: string) => {
+    navigate('/');
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
+  };
+
   useEffect(() => {
-    // Scroll to top when component mounts
     window.scrollTo(0, 0);
-    
-    // If project not found, redirect to projects page
     if (!project) {
       navigate('/');
     }
@@ -53,14 +62,14 @@ export default function ProjectDetail() {
         <div className="container px-4 md:px-6 max-w-7xl mx-auto py-12">
           <Button 
             variant="outline" 
-            asChild 
+            onClick={() => scrollToSection('projects')}
             className="mb-8"
             size="sm"
           >
-            <Link to="/#projects" className="flex items-center gap-2">
+            <span className="flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back to Projects
-            </Link>
+            </span>
           </Button>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -209,10 +218,11 @@ export default function ProjectDetail() {
                 <p className="mb-4 text-muted-foreground">
                   If you like this project and need something similar, I'd love to help bring your ideas to life.
                 </p>
-                <Button asChild className="w-full">
-                  <Link to="/#contact">
-                    Contact Me
-                  </Link>
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full"
+                >
+                  Contact Me
                 </Button>
               </div>
             </div>

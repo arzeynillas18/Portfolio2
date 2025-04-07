@@ -61,6 +61,19 @@ export default function Home() {
     }
   };
 
+  const education = [
+    {
+      degree: "Master of Computer Science",
+      institution: "Tech University",
+      year: "2016",
+    },
+    {
+      degree: "Bachelor of Science in Web Development",
+      institution: "Digital Arts College",
+      year: "2014",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -102,11 +115,32 @@ export default function Home() {
                 </a>
               </Button>
 
-                  <Button asChild variant="outline" size="lg" className="gap-2">
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                      Resume <Download className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
+              <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="group relative inline-flex items-center justify-center p-0.5 text-sm font-medium text-gray-900 rounded-lg bg-transparent hover:bg-blue-300 hover:text-blue-700 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-800"
+            >
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative flex items-center gap-2 px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+              >
+                Resume <Download className="h-4 w-4" />
+
+                {/* Tooltip */}
+                <div className="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
+                  <div className="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center text-sm text-slate-300">
+                    <div className="rounded-sm bg-transparent py-1 px-2">
+                      <p className="whitespace-nowrap text-black">Download my resume</p>
+                    </div>
+                    <div className="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black" />
+                  </div>
+                </div>
+              </a>
+            </Button>
+
                 </div>
                 <div className="flex gap-4 pt-4">
                   <a 

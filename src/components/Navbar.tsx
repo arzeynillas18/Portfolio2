@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeToggle } from './ThemeToggle';
@@ -22,6 +21,17 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -43,59 +53,46 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/#about"
+            <button
+              onClick={() => scrollToSection('about')}
               className="text-foreground/80 hover:text-primary transition-colors font-medium"
             >
               About
-            </Link>
-            <Link
-              to="/#projects"
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
               className="text-foreground/80 hover:text-primary transition-colors font-medium"
             >
               Projects
-            </Link>
-            <Link
-              to="/#contact"
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
               className="text-foreground/80 hover:text-primary transition-colors font-medium"
             >
               Contact
-            </Link>
+            </button>
 
             <ThemeToggle />
 
             <Button asChild>
-  <a
-    href="/resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group"
-  >
-    <span
-      className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-mr-4 group-hover:-mt-4"
-    >
-      <span
-        className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"
-      ></span>
-    </span>
-    <span
-      className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-ml-4 group-hover:-mb-4"
-    >
-      <span
-        className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"
-      ></span>
-    </span>
-    <span
-      className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"
-    ></span>
-    <span
-      className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white"
-    >
-      Resume
-    </span>
-  </a>
-</Button>
-
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group"
+              >
+                <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                </span>
+                <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                  <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                </span>
+                <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"></span>
+                <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
+                  Resume
+                </span>
+              </a>
+            </Button>
           </nav>
 
           {/* Mobile Navigation Button */}
@@ -120,27 +117,24 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in">
             <nav className="flex flex-col space-y-4">
-              <Link
-                to="/#about"
-                className="text-foreground/80 hover:text-primary transition-colors font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <button
+                onClick={() => scrollToSection('about')}
+                className="text-foreground/80 hover:text-primary transition-colors font-medium py-2 text-left"
               >
                 About
-              </Link>
-              <Link
-                to="/#projects"
-                className="text-foreground/80 hover:text-primary transition-colors font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('projects')}
+                className="text-foreground/80 hover:text-primary transition-colors font-medium py-2 text-left"
               >
                 Projects
-              </Link>
-              <Link
-                to="/#contact"
-                className="text-foreground/80 hover:text-primary transition-colors font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="text-foreground/80 hover:text-primary transition-colors font-medium py-2 text-left"
               >
                 Contact
-              </Link>
+              </button>
               <Button asChild className="w-full">
                 <a
                   href="/resume.pdf"
