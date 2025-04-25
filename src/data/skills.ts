@@ -22,9 +22,7 @@ export const skills: Skill[] = [
   { name: 'Python', category: 'backend' },
   { name: 'Django', category: 'backend' },
   { name: 'Java', category: 'backend' },
-  { name: 'REST API', category: 'backend' },
   { name: 'MongoDB', category: 'backend' },
-  { name: 'PostgreSQL', category: 'backend' },
   { name: 'MySQL', category: 'backend' },
   { name: 'Firebase', category: 'backend' },
 
@@ -44,6 +42,8 @@ export const skills: Skill[] = [
   { name: 'Npm', category: 'other' },
   { name: 'Github', category: 'other' },
   { name: 'Vs Code', category: 'other' },
+  { name: 'GODOT Engine', category: 'other' },
+
   
 ];
 

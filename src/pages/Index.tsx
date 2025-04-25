@@ -264,7 +264,7 @@ export default function Home() {
                   <p className="text-lg font-medium">Years of Experience</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">14+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">16+</p>
                   <p className="text-lg font-medium">Projects Delivered</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
