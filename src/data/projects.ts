@@ -86,9 +86,9 @@ export const projects: Project[] = [
       "Contact and Consultation Forms — Easy client-artist communication setup.",
       
     ],
-    tags: ["AI", "Next.js", "OpenAI", "AWS"],
+    tags: ["Tattoo Shop", "Vite", "Shop Portfolio", "Web Design"],
     technologies: {
-      frontend: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vite","ShadCn UI" ],
+      frontend: ["TypeScript", "TailwindCSS", "Framer Motion", "Vite","ShadCn UI" ],
       backend: ["Node.js", "Express", "Firebase",],
       deployment: ["Vercel"],
       other: ["Gthub", "Figma"]
