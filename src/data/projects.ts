@@ -75,59 +75,72 @@ export const projects: Project[] = [
     demo: "https://example.com"
   },
   {
-    id: "ai-image-generator",
-    title: "AI Image Generator",
-    description: "An application that uses AI to generate unique images based on text descriptions.",
-    longDescription: "This innovative application harnesses the power of artificial intelligence to create unique, high-quality images from text descriptions. Users can describe what they want to see, and the AI will generate corresponding visuals, perfect for creative projects, marketing materials, or artistic inspiration.",
+    id: "tatto site",
+    title: "Eternal Canvas A TOUCH OF INK",
+    description: "Eternal Canvas is a tattoo shop web app for booking appointments, exploring designs, and connecting with skilled tattoo artists.",
+    longDescription: "Eternal Canvas is a modern tattoo shop web app that makes it easy for clients to discover tattoo designs, view artist portfolios, and book appointments online. Built for convenience and creativity, it helps users find the perfect artist, schedule sessions, and get inspired — all in one sleek platform. Eternal Canvas enhances the traditional tattoo shop experience by making it faster, easier, and more connected for both clients and artists.",
     features: [
-      "Text-to-image generation using advanced AI models",
-      "Customizable image parameters (style, size, color palette)",
-      "Gallery of generated images with sharing options",
-      "User accounts to save favorite generations",
-      "Batch processing for multiple images",
-      "Commercial usage licensing options"
+      "Online Appointment Booking — Quickly schedule sessions with tattoo artists.",
+      "Artist Portfolios — View artist profiles with sample works and specialties.",
+      "Tattoo Design Gallery — Browse a curated collection of tattoo ideas and inspirations.",
+      "Contact and Consultation Forms — Easy client-artist communication setup.",
+      
     ],
     tags: ["AI", "Next.js", "OpenAI", "AWS"],
     technologies: {
-      frontend: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-      backend: ["Python", "Flask", "AWS Lambda", "MongoDB"],
-      deployment: ["AWS", "S3", "CloudFront"],
-      other: ["OpenAI API", "Stable Diffusion"]
+      frontend: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Vite","ShadCn UI" ],
+      backend: ["Node.js", "Express", "Firebase",],
+      deployment: ["Vercel"],
+      other: ["Gthub", "Figma"]
     },
-    image: "https://images.unsplash.com/photo-1669644843070-b4e34477a9c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+    image: "../../projects/et1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1669644843070-b4e34477a9c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
-      "https://images.unsplash.com/photo-1684391283098-1cd9ebef70f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+      "../../projects/et1.png",
+      "../../projects/et2.png",
+      "../../projects/et3.png",
+      "../../projects/et4.png",
+      "../../projects/et5.png",
+      "../../projects/et6.png",
+      "../../projects/et7.png", 
+      "../../projects/et8.png",
     ],
-    github: "https://github.com",
-    demo: "https://example.com"
+    github: "https://github.com/arzeynillas18",
+    demo: "https://eternal-canvas.vercel.app/"
   },
   {
-    id: "fitness-tracker",
-    title: "Fitness Tracker",
-    description: "A mobile-first application for tracking workouts, nutrition, and fitness goals.",
-    longDescription: "This comprehensive fitness tracking application helps users monitor their exercise routines, nutrition intake, and progress toward health goals. With intuitive interfaces and data visualization, users can easily track their fitness journey and make informed decisions about their health.",
+    id: "digital marketing site",
+    title: "Apex Studio ",
+    description: "APEX Studio is a digital marketing agency helping businesses grow through data-driven strategies, stunning websites, and engaging content.",
+    longDescription: "APEX Studio is a results-driven digital marketing agency specializing in brand strategy, web development, digital marketing, content creation, UI/UX design, and social media management. Since 2020, they’ve empowered small businesses to achieve enterprise-level success by delivering transparent, innovative, and measurable solutions. Their expert team combines creativity and technology to transform brands, increase visibility, and drive real growth through strategic campaigns and user-centered design.",
     features: [
-      "Workout logger with custom exercise creation",
-      "Nutrition tracking with calorie and macro calculations",
-      "Goal setting and progress visualization",
-      "Integration with wearable fitness devices",
-      "Community features for motivation and accountability",
-      "Personalized workout recommendations"
+      "Responsive Design — Fully optimized for mobile, tablet, and desktop devices.",
+      "Next.js Framework — Built with server-side rendering for faster loading and SEO benefits.",
+      "SEO Optimized — Structured with best practices in meta tags, accessibility, and page performance.",
+      "Modern UI/UX — Clean, minimalistic, and user-friendly design.",
+      "Reusable Components — Modular code structure for easy maintenance and scaling.",
+      "API Integration Ready — Setup for quick connection to external services or CMS platforms."
     ],
-    tags: ["Health", "React Native", "Firebase", "GraphQL"],
+    tags: ["Marketing", "Digital", "Content", "Comprehensive Services"],
     technologies: {
-      frontend: ["React Native", "Expo", "Redux", "Victory Charts"],
-      backend: ["Firebase", "Cloud Functions", "GraphQL"],
-      deployment: ["App Store", "Google Play", "Firebase Hosting"]
+      frontend: ["React", "TypeScript", "ShadCn UI", "Next.js", "Tailwind CSS", "Radix UI ", "Framer Motion" ],
+      backend: ["Node.js", "Express"],
+      deployment: ["Vercel", "Firebase Hosting"],
     },
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
+    image: "../../projects/apex1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
-      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+      "../../projects/apex1.png",
+      "../../projects/apex2.png",
+      "../../projects/apex3.png",
+      "../../projects/apex4.png",
+      "../../projects/apex5.png",
+      "../../projects/apex6.png",
+      "../../projects/apex7.png",
+      "../../projects/apex8.png",
+      "../../projects/apex9.png",
+      "../../projects/apex0.png",
     ],
-    github: "https://github.com",
-    demo: "https://example.com"
+    github: "https://github.com/arzeynillas18",
+    demo: "https://apex-web-five.vercel.app/"
   },
 
   {
