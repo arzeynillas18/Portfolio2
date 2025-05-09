@@ -47,32 +47,34 @@ export const projects: Project[] = [
     github: "https://github.com",
     demo: "https://example.com"
   },
+
   {
-    id: "task-management-app",
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team functionality.",
-    longDescription: "This task management application helps teams collaborate efficiently by providing a centralized platform for tracking projects and tasks. With real-time updates, team members can stay informed about progress and changes as they happen.",
+    id: "weather-app",
+    title: "My Weather Grid ",
+    description: "A responsive web app that delivers detailed weather forecasts and environmental data for cities globally, presented in a structured grid layout.",
+    longDescription: "My Weather Grid is a feature-rich weather application that allows users to access a wide range of meteorological data for any city. By entering a city name, users can view current weather conditions, forecasts, and various environmental metrics. The application is designed with a clean, responsive interface, ensuring optimal usability across different devices. It leverages modern web technologies to fetch and display real-time data, providing users with accurate and up-to-date weather information.",
     features: [
-      "Kanban board for visual task management",
-      "Real-time collaboration with WebSockets",
-      "Task assignments, due dates, and priorities",
+      "City-Based Weather Search",
+      "Comprehensive Weather Data",
+      "Responsive Grid Layout",
       "File attachments and comments",
       "Project analytics and reporting",
-      "Email notifications for important updates"
+      "Real-Time Data Updates"
     ],
-    tags: ["Productivity", "React", "WebSockets", "PostgreSQL"],
+    tags: ["Environmental Metrics", "Real-Time Data", "Weather API", "Responsive Design"],
     technologies: {
-      frontend: ["React", "TypeScript", "Chakra UI", "React DnD"],
-      backend: ["Node.js", "Express", "PostgreSQL", "Socket.io"],
-      deployment: ["Vercel", "Heroku", "GitHub Actions"]
+      frontend: ["Next Js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI", "JavaScript", "Radix UI",],
+      backend: ["Node.js", "Open-Weather Api",],
+      deployment: ["Vercel",  "GitHub "]
     },
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2669&q=80",
+    image: "../../projects/wt1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2669&q=80",
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2672&q=80"
+      "../../projects/wt1.png",
+      "../../projects/wt2.png",
+      
     ],
-    github: "https://github.com",
-    demo: "https://example.com"
+    github: "https://github.com/arzeynillas18",
+    demo: "https://my-weather-grid.vercel.app/"
   },
   {
     id: "tatto site",
