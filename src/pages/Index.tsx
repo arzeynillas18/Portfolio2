@@ -53,7 +53,7 @@ export default function Home() {
   // Handle view more/less for projects
   const toggleProjects = () => {
     if (showAllProjects) {
-      setVisibleProjects(projects.slice(0, 4));
+      setVisibleProjects(projects.slice(0, 6));
       setShowAllProjects(false);
     } else {
       setVisibleProjects(projects);
@@ -91,8 +91,8 @@ export default function Home() {
                   Full Stack Software Engineer
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-xl">
-                  I build accessible, user-friendly web applications with modern technologies.
-                  Passionate about creating digital experiences that are both functional and beautiful.
+                  I create modern, accessible web applications that combine usability, performance, and visual appeal. 
+                  My focus is on delivering seamless digital experiences that work for everyone.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button asChild size="lg" className="gap-2">
