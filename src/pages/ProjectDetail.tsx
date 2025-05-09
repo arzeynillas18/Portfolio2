@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect,  } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -13,16 +13,7 @@ export default function ProjectDetail() {
   const project = getProjectById(id || '');
 
   const scrollToSection = (sectionId: string) => {
-    navigate('/');
-    setTimeout(() => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }, 100);
+    window.location.href = `/#${sectionId}`;
   };
 
   useEffect(() => {
@@ -101,7 +92,7 @@ export default function ProjectDetail() {
                         key={index}
                         src={image} 
                         alt={`${project.title} screenshot ${index + 1}`}
-                        className="rounded-lg shadow-sm hover:shadow-md transition-all"
+                        className="rounded-lg shadow-sm hover:shadow-md transition-all transform hover:scale-105 duration-300"
                       />
                     ))}
                   </div>

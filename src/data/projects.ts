@@ -23,29 +23,36 @@ export const projects: Project[] = [
     id: "ecommerce-platform",
     title: "E-Commerce Platform",
     description: "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-    longDescription: "This comprehensive e-commerce solution provides businesses with everything they need to sell products online. The platform includes robust product management, shopping cart functionality, secure checkout, and integration with popular payment gateways.",
+    longDescription: "This AquaStore e-commerce platform provides a complete solution for selling fish and aquatic products online, featuring efficient product management, a smooth shopping cart experience, secure checkout, and integration with trusted payment gateways",
     features: [
       "Product catalog with categories and filtering",
       "User authentication and profile management",
       "Shopping cart and wishlist functionality",
       "Secure checkout with Stripe integration",
-      "Order history and tracking",
       "Admin dashboard for inventory management"
     ],
     tags: ["E-Commerce", "React", "Node.js", "MongoDB"],
     technologies: {
-      frontend: ["React", "Redux", "Tailwind CSS", "React Query"],
+      frontend: ["React", "Redux", "Tailwind CSS", "React Query","Fmer Motion"],
       backend: ["Node.js", "Express", "MongoDB", "JWT Authentication"],
-      deployment: ["AWS", "Docker", "CI/CD Pipeline"],
-      other: ["Stripe API", "Cloudinary"]
+      deployment: ["Vercel", "Github"],
+  
     },
-    image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
+    image: "../../projects/ecom1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
-      "https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+      "../../projects/ecom1.png", 
+      "../../projects/ecom2.png",
+      "../../projects/ecom3.png",
+      "../../projects/ecom5.png",
+      "../../projects/ecom7.png",
+      "../../projects/ecom8.png",
+      "../../projects/ecom9.png",
+      "../../projects/ecom10.png",
+      "../../projects/ecom11.png",
+
     ],
-    github: "https://github.com",
-    demo: "https://example.com"
+    github: "https://github.com/arzeynillas18",
+    demo: ""
   },
 
   {

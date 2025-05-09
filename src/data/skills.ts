@@ -25,6 +25,8 @@ export const skills: Skill[] = [
   { name: 'MongoDB', category: 'backend' },
   { name: 'MySQL', category: 'backend' },
   { name: 'Firebase', category: 'backend' },
+  { name: 'Php', category: 'backend' },
+
 
   // Mobile
   { name: 'Android', category: 'mobile' },
