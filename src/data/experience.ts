@@ -14,16 +14,16 @@ export const experiences: Experience[] = [
     company: "Client of the Internet",
     location: "Remote",
     period: "January 2023 - Present",
-    description: "specializing in modern web technologies like React, TypeScript, JavaScript, Next.js, and Tailwind CSS. I build fast, responsive, and scalable web applications with clean, maintainable code. Whether you need a dynamic single-page app, a performant website, or a seamless user interface, I deliver high-quality solutions tailored to your needs. Lets bring your ideas to life!",
-    technologies: ["React", "TypeScript","JavasSCript", , "Next.js", "Tailwind CSS", "HTML 5", "CSS"]
+    description: "Built modern, responsive UIs using React, Next.js, TypeScript, and JavaScript. Styled interfaces with Tailwind CSS, Material UI, Radix UI, Shadcn UI, and standard HTML5/CSS. Focused on clean design, accessibility, and performance.",
+    technologies: ["React","Vite", "TypeScript","JavasSCript", , "Next.js", "Tailwind CSS", "HTML 5", "CSS", "Material UI", "Radix UI", "Shadcn Ui"]
   },
   {
     title: "Freelance Full Stack Developer",
     company: "Various Clients of the Internet",
     location: "Remote",
     period: "March 2024 - Present",
-    description: "Developed responsive web applications with modern JavaScript frameworks. Collaborated with UX designers to implement pixel-perfect interfaces.",
-    technologies: ["Next.js", "JavaScript", "SCSS", "Firebase", "MongodB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySql" , "Java"], 
+    description: "Built responsive, full-stack web applications using Next.js, JavaScript, SCSS, Node.js, Express.js, Python, Django, and PHP. Integrated MongoDB, PostgreSQL, MySQL, and Firebase for dynamic data handling. Delivered scalable, mobile-friendly solutions with clean, maintainable code.",
+    technologies: ["Next.js", "Vite", "JavaScript", "SCSS", "Firebase", "MongodB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySql" , "Java", "Php"], 
   },
   
 ];
