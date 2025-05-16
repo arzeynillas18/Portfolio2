@@ -1,4 +1,4 @@
-import { useEffect,  } from 'react';
+import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -13,7 +13,14 @@ export default function ProjectDetail() {
   const project = getProjectById(id || '');
 
   const scrollToSection = (sectionId: string) => {
-    window.location.href = `/#${sectionId}`;
+    navigate('/');
+
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   useEffect(() => {
@@ -32,9 +39,9 @@ export default function ProjectDetail() {
         {/* Hero Image */}
         <div className="relative w-full h-[40vh] md:h-[60vh] overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10"></div>
-          <img 
-            src={project.image} 
-            alt={project.title} 
+          <img
+            src={project.image}
+            alt={project.title}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 z-20 flex items-center justify-center">
@@ -48,11 +55,11 @@ export default function ProjectDetail() {
             </div>
           </div>
         </div>
-        
+
         {/* Project Content */}
         <div className="container px-4 md:px-6 max-w-7xl mx-auto py-12">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             onClick={() => scrollToSection('projects')}
             className="mb-8"
             size="sm"
@@ -62,7 +69,7 @@ export default function ProjectDetail() {
               Back to Projects
             </span>
           </Button>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <section>
@@ -71,7 +78,7 @@ export default function ProjectDetail() {
                   {project.longDescription}
                 </p>
               </section>
-              
+
               <section>
                 <h2 className="text-2xl font-bold mb-4">Key Features</h2>
                 <ul className="space-y-2 list-disc pl-5">
@@ -82,15 +89,15 @@ export default function ProjectDetail() {
                   ))}
                 </ul>
               </section>
-              
+
               {project.gallery && project.gallery.length > 0 && (
                 <section>
                   <h2 className="text-2xl font-bold mb-4">Project Gallery</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {project.gallery.map((image, index) => (
-                      <img 
+                      <img
                         key={index}
-                        src={image} 
+                        src={image}
                         alt={`${project.title} screenshot ${index + 1}`}
                         className="rounded-lg shadow-sm hover:shadow-md transition-all transform hover:scale-105 duration-300"
                       />
@@ -99,15 +106,17 @@ export default function ProjectDetail() {
                 </section>
               )}
             </div>
-            
+
             <div className="space-y-8">
               <div className="bg-card p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold mb-4">Project Info</h3>
-                
+
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium text-muted-foreground">Technologies</h4>
-                    
+                    <h4 className="font-medium text-muted-foreground">
+                      Technologies
+                    </h4>
+
                     {project.technologies.frontend && (
                       <div className="mt-2">
                         <p className="text-sm font-medium mb-1">Frontend:</p>
@@ -120,7 +129,7 @@ export default function ProjectDetail() {
                         </div>
                       </div>
                     )}
-                    
+
                     {project.technologies.backend && (
                       <div className="mt-2">
                         <p className="text-sm font-medium mb-1">Backend:</p>
@@ -133,7 +142,7 @@ export default function ProjectDetail() {
                         </div>
                       </div>
                     )}
-                    
+
                     {project.technologies.deployment && (
                       <div className="mt-2">
                         <p className="text-sm font-medium mb-1">Deployment:</p>
@@ -146,7 +155,7 @@ export default function ProjectDetail() {
                         </div>
                       </div>
                     )}
-                    
+
                     {project.technologies.other && (
                       <div className="mt-2">
                         <p className="text-sm font-medium mb-1">Other:</p>
@@ -160,13 +169,17 @@ export default function ProjectDetail() {
                       </div>
                     )}
                   </div>
-                  
+
                   <div className="pt-4 space-y-3">
                     {project.github && (
-                      <Button asChild variant="outline" className="w-full gap-2 justify-start">
-                        <a 
-                          href={project.github} 
-                          target="_blank" 
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="w-full gap-2 justify-start"
+                      >
+                        <a
+                          href={project.github}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
@@ -175,12 +188,15 @@ export default function ProjectDetail() {
                         </a>
                       </Button>
                     )}
-                    
+
                     {project.demo && (
-                      <Button asChild className="w-full gap-2 justify-start">
-                        <a 
-                          href={project.demo} 
-                          target="_blank" 
+                      <Button
+                        asChild
+                        className="w-full gap-2 justify-start"
+                      >
+                        <a
+                          href={project.demo}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center"
                         >
@@ -192,7 +208,7 @@ export default function ProjectDetail() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-card p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold mb-4">Tags</h3>
                 <div className="flex flex-wrap gap-2">
@@ -203,13 +219,16 @@ export default function ProjectDetail() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="bg-muted p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Interested in similar work?</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Interested in similar work?
+                </h3>
                 <p className="mb-4 text-muted-foreground">
-                  If you like this project and need something similar, I'd love to help bring your ideas to life.
+                  If you like this project and need something similar, I'd love to
+                  help bring your ideas to life.
                 </p>
-                <Button 
+                <Button
                   onClick={() => scrollToSection('contact')}
                   className="w-full"
                 >

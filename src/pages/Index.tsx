@@ -61,18 +61,7 @@ export default function Home() {
     }
   };
 
-  const education = [
-    {
-      degree: "Master of Computer Science",
-      institution: "Tech University",
-      year: "2016",
-    },
-    {
-      degree: "Bachelor of Science in Web Development",
-      institution: "Digital Arts College",
-      year: "2014",
-    },
-  ];
+
 
   return (
     <>
@@ -122,9 +111,8 @@ export default function Home() {
               className="group relative inline-flex items-center justify-center p-0.5 text-sm font-medium text-gray-900 rounded-lg bg-transparent hover:bg-blue-300 hover:text-blue-700 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-800"
             >
               <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/CV_Arzey.pdf"
+                download
                 className="relative flex items-center gap-2 px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
               >
                 Resume <Download className="h-4 w-4" />
@@ -140,6 +128,7 @@ export default function Home() {
                 </div>
               </a>
             </Button>
+
 
                 </div>
                 <div className="flex gap-4 pt-4">
@@ -264,11 +253,11 @@ export default function Home() {
                   <p className="text-lg font-medium">Years of Experience</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">16+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">20+</p>
                   <p className="text-lg font-medium">Projects Delivered</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">13+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">15+</p>
                   <p className="text-lg font-medium">Satisfied Clients</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">

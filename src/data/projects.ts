@@ -19,6 +19,72 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+{
+    id: "rental-management-system",
+    title: "Lease Track Monitoring System",
+    description: "Lease Track is a rental monitoring system designed to help landlords manage house rentals more efficiently. It streamlines rental management by optimizing tenant data, simplifying payment processes, and leveraging modern web technologies to ensure smooth processing and secure storage of tenant, payment, and property information.",
+    longDescription: "Lease Track is a rental monitoring system designed to help landlords manage house rentals more efficiently. It streamlines rental management by optimizing tenant data, simplifying payment processes, and leveraging modern web technologies to ensure smooth processing and secure storage of tenant, payment, and property information. The system features a user-friendly interface for landlords to track tenants, payments, and properties, making it easier to manage multiple rentals and maintain accurate records.",
+    features: [
+      "Real-time chat box (Admin ↔ Tenant)",
+      "Tenant management (CRUD operations)",
+      "Payment tracking (CRUD operations)",
+      "Property management (CRUD operations)",
+      "User authentication (Admin and Tenant)",
+      "Responsive design for mobile and desktop",
+      "Data visualization with charts",
+      "File attachments and comments",
+      "Project analytics and reporting",
+      "User-friendly interface",
+      "Secure data storage",
+      "Multiple payment methods (e.g., card, bank transfer)",
+      "Search and filter functionality",
+      "User roles and permissions",
+      "Notifications and alerts",
+      "Upload/store rental contracts",
+      "User-friendly dashboard",
+      "Late payment and delinquency list, Automated penalty calculation, Filter by date, unit, or tenant",
+      "Tenant history and payment history",
+
+    ],
+    tags: ["Monitoring Sytem ", "Php", "Mysql", "Bootstrap", "Javascript"],
+    technologies: {
+      frontend: ["HTML", "CSS", "Bootstrap 5", "React Query","jQuery", "JavaScript", "AJAX"],
+      backend: ["Php", "Mysql", "Mailer", "Chart.js","FPDF + FPDI"],
+      deployment: ["XAMPP", "WAMP"],
+      
+  
+    },
+    image: "../../projects/rm1.png",
+    gallery: [
+      "../../projects/rm1.png",
+      "../../projects/rm2.png",
+      "../../projects/rm3.png",
+      "../../projects/rm4.png",
+      "../../projects/rm5.png",
+      "../../projects/rm6.png",
+      "../../projects/rm7.png",
+      "../../projects/rm8.png",
+      "../../projects/rm9.png",
+      "../../projects/rm10.png",
+      "../../projects/rm11.png",
+      "../../projects/rm12.png",
+      "../../projects/rm13.png",
+      "../../projects/rm14.png",
+      "../../projects/rm15.png",
+      "../../projects/rm16.png",
+      "../../projects/rm17.png",
+      "../../projects/rm19.png",
+      "../../projects/rm20.png",
+      "../../projects/rm21.png",
+      "../../projects/rm22.png",
+      "../../projects/rm23.png",
+      
+
+    ],
+    github: "https://github.com/arzeynillas18",
+    demo: ""
+  },
+  
   {
     id: "ecommerce-platform",
     title: "E-Commerce Platform",
@@ -55,6 +121,7 @@ export const projects: Project[] = [
     demo: ""
   },
 
+  
   
   {
     id: "tatto site",
@@ -115,7 +182,6 @@ export const projects: Project[] = [
       "../../projects/apex3.png",
       "../../projects/apex4.png",
       "../../projects/apex5.png",
-      "../../projects/apex6.png",
       "../../projects/apex7.png",
       "../../projects/apex8.png",
       "../../projects/apex9.png",
