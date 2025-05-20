@@ -105,29 +105,32 @@ export default function Home() {
               </Button>
 
               <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="group relative inline-flex items-center justify-center p-0.5 text-sm font-medium text-gray-900 rounded-lg bg-transparent hover:bg-blue-300 hover:text-blue-700 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-800"
-            >
-              <a
-                href="/CV_Arzey.pdf"
-                download
-                className="relative flex items-center gap-2 px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+                asChild
+                variant="outline"
+                size="lg"
+                className="group relative inline-flex items-center justify-center p-0.5 text-sm font-medium text-gray-900 rounded-lg bg-transparent hover:bg-blue-300 hover:text-blue-700 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-800"
               >
-                Resume <Download className="h-4 w-4" />
+                <a
+                  href="/CV_Arzey.pdf"
+                  download
+                  className="relative flex items-center gap-2 px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 dark:text-blue-400"
+                >
+                  Resume <Download className="h-4 w-4" />
 
-                {/* Tooltip */}
-                <div className="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
-                  <div className="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center text-sm text-slate-300">
-                    <div className="rounded-sm bg-transparent py-1 px-2">
-                      <p className="whitespace-nowrap text-black">Download my resume</p>
+                  {/* Tooltip */}
+                  <div className="ease-in duration-300 opacity-0 group-hover:block group-hover:opacity-100 transition-all">
+                    <div className="ease-in-out duration-500 -translate-y-4 pointer-events-none transition-all group-hover:-translate-y-16 absolute left-1/2 z-50 flex -translate-x-1/2 flex-col items-center text-sm text-slate-300 dark:text-blue-300">
+                      <div className="rounded-sm bg-transparent py-1 px-2 dark:bg-gray-800">
+                        <p className="whitespace-nowrap text-black dark:text-blue-300">
+                          Download my resume
+                        </p>
+                      </div>
+                      <div className="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black dark:border-t-blue-300" />
                     </div>
-                    <div className="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black" />
                   </div>
-                </div>
-              </a>
-            </Button>
+                </a>
+              </Button>
+
 
 
                 </div>
@@ -411,9 +414,32 @@ export default function Home() {
             
             {projects.length > 6 && (
               <div className="flex justify-center mt-12">
-                <Button onClick={toggleProjects}>
-                  {showAllProjects ? 'Show Less' : 'View More Projects'}
-                </Button>
+                <button
+  onClick={toggleProjects}
+  className="group relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-sky-400 to-blue-400 group-hover:from-sky-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-sky-300 dark:focus:ring-blue-800
+"
+>
+  <span
+    className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-slate-600 rounded-md group-hover:bg-opacity-0"
+  >
+    {showAllProjects ? 'Show Less' : 'View More Projects'}
+  </span>
+  <div className="hidden group-hover:block">
+    <div
+      className="group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-slate-300 before:-top-2"
+    >
+      <div className="rounded-sm bg-black py-1 px-2">
+        <p className="whitespace-nowrap">
+          {showAllProjects ? 'Collapse the project list' : 'Expand to see more projects'}
+        </p>
+      </div>
+      <div
+        className="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black"
+      ></div>
+    </div>
+  </div>
+</button>
+
               </div>
             )}
           </div>

@@ -19,6 +19,63 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+ /* {
+  id: "",
+  title: "",
+  description: "",
+  longDescription: "",
+  features: [],
+  tags: [],
+  technologies: {
+    frontend: [],
+    backend: [],
+    deployment: []
+  },
+  image: "",
+  gallery: [],
+  github: "",
+  demo: ""
+}
+*/
+{
+  id: "student-portal-management-system",
+  title: "Academia Access Student Portal",
+  description: "Academia Access offers role-based access for admins, students, and teachers, streamlined course enrollment, and gradetracking, real-time notifications, and secure authentication built with Laravel and Vite.",
+  longDescription: " Academia Access is a comprehensive student portal management system designed to enhance the educational experience for students, teachers, and administrators. The platform features role-based access control, allowing different user types to access specific functionalities tailored to their needs. Students can enroll in courses, track their grades, and receive real-time notifications about important updates. Teachers can manage course content and communicate with students effectively. The system is built using Laravel for the backend and Vite for the frontend, ensuring a modern and responsive user experience.",
+  features: [],
+  tags: ["Role-Based Access" ,"Laravel","Web Application", "Student Portal" ],
+  technologies: {
+    frontend: ["Tailwind Css", "Javascript", "React", "Vite" , "JQuery", "HTML", "CSS",],
+    backend: ["PHP", "Laravel", "LiveWire", "MySQL" , "Blade"],
+    deployment: []
+  },
+  image: "../../projects/aa1.png",
+  gallery: [
+    "../../projects/aa1.png",
+    "../../projects/aa2.png",
+    "../../projects/aa3.png",
+    "../../projects/aa4.png",
+    "../../projects/aa5.png",
+    "../../projects/aa6.png",
+    "../../projects/aa7.png",
+    "../../projects/aa8.png",
+    "../../projects/aa9.png",
+    "../../projects/aa10.png",
+    "../../projects/aa11.png",
+    "../../projects/aa12.png",
+    "../../projects/aa13.png",
+    "../../projects/aa14.png",
+    "../../projects/aa15.png",
+    "../../projects/aa16.png",
+    "../../projects/aa17.png",
+    "../../projects/aa18.png",
+    "../../projects/aa19.png",
+    "../../projects/aa20.png",
+
+  ],
+  github: "",
+  demo: ""
+},
 {
     id: "rental-management-system",
     title: "Lease Track Monitoring System",
