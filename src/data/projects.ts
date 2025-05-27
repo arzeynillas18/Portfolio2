@@ -213,6 +213,44 @@ export const projects: Project[] = [
     github: "https://github.com/arzeynillas18",
     demo: "https://eternal-canvas.vercel.app/"
   },
+
+  {
+  id: "info-management-system",
+  title: "DigiBayan Information Management System",
+  description: "A modern Barangay Information Management System designed to streamline barangay services such as permit processing, resident records, and essential data management. The system offers a user-friendly dashboard, analytics, and intuitive interfaces for efficient digital governance.",
+  longDescription: "The Barangay Information Management System (BIMS) is a comprehensive web-based platform designed to digitize and enhance the operations of a barangay. It centralizes all essential barangay services—such as permit applications, resident data management, and record-keeping—into one seamless and accessible system. The system empowers barangay officials and staff with a dashboard that displays real-time insights, a list view for organized records, and analytics tools for data-driven decision-making. BIMS aims to reduce manual paperwork, minimize errors, and ensure faster processing of permits, certifications, and other barangay services. It also provides a modern and user-friendly interface that makes navigating the system simple for both staff and residents. By digitizing the barangay's core functions, the system supports improved transparency, efficiency, and service delivery for the community.",
+  features: [
+    "Digital Permit & Certification Requests – Apply for barangay permits and certificates online, reducing the need for in-person visits.",
+    "Responsive and User-Friendly Design – Accessible across devices with an easy-to-navigate interface that ensures a seamless user experience.",
+    "Dashboard & Analytics – Get real-time summaries of data, trends, and insights through an interactive and user-friendly dashboard.",
+    " Resident Records Management – Maintain and manage a secure and organized database of residents, households, and community information.",
+  ],
+  tags: ["InformationManagement", "Php", "WebApp", "BarangayServices" ],
+  technologies: {
+    frontend: [ "Javascript","Bootsrap5", "Html", "CSS", "Jquery", "AJAX"],
+    backend: [ "Php","Mysql","jsPDF","XLSXjs"],
+    deployment: [ "XAMPP"]
+  },
+  image: "../../projects/db1.png",
+  gallery: [
+    "../../projects/db1.png",
+    "../../projects/db2.png",
+    "../../projects/db3.png",
+    "../../projects/db4.png",
+    "../../projects/db5.png",
+    "../../projects/db6.png",
+    "../../projects/db7.png",
+    "../../projects/db8.png",
+    "../../projects/db9.png",
+    "../../projects/db10.png",
+    "../../projects/db11.png",
+    "../../projects/db12.png",
+    
+  ],
+  github: "https://github.com/arzeynillas18",
+  demo: ""
+},
+
   {
     id: "digital marketing site",
     title: "Apex Studio ",
