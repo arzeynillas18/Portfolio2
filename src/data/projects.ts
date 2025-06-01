@@ -178,42 +178,36 @@ export const projects: Project[] = [
     demo: ""
   },
 
-  
-  
   {
-    id: "tatto site",
-    title: "Eternal Canvas A TOUCH OF INK",
-    description: "Eternal Canvas is a tattoo shop web app for booking appointments, exploring designs, and connecting with skilled tattoo artists.",
-    longDescription: "Eternal Canvas is a modern tattoo shop web app that makes it easy for clients to discover tattoo designs, view artist portfolios, and book appointments online. Built for convenience and creativity, it helps users find the perfect artist, schedule sessions, and get inspired — all in one sleek platform. Eternal Canvas enhances the traditional tattoo shop experience by making it faster, easier, and more connected for both clients and artists.",
+    id: "weather-app",
+    title: "My Weather Grid ",
+    description: "A responsive web app that delivers detailed weather forecasts and environmental data for cities globally, presented in a structured grid layout.",
+    longDescription: "My Weather Grid is a feature-rich weather application that allows users to access a wide range of meteorological data for any city. By entering a city name, users can view current weather conditions, forecasts, and various environmental metrics. The application is designed with a clean, responsive interface, ensuring optimal usability across different devices. It leverages modern web technologies to fetch and display real-time data, providing users with accurate and up-to-date weather information.",
     features: [
-      "Online Appointment Booking — Quickly schedule sessions with tattoo artists.",
-      "Artist Portfolios — View artist profiles with sample works and specialties.",
-      "Tattoo Design Gallery — Browse a curated collection of tattoo ideas and inspirations.",
-      "Contact and Consultation Forms — Easy client-artist communication setup.",
+      "City-Based Weather Search",
+      "Comprehensive Weather Data",
+      "Responsive Grid Layout",
+      "File attachments and comments",
+      "Project analytics and reporting",
+      "Real-Time Data Updates"
+    ],
+    tags: ["Environmental Metrics", "Real-Time Data","Bento-Box Design","Personal Project"],
+    technologies: {
+      frontend: ["Next Js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI", "JavaScript", "Radix UI",],
+      backend: ["Node.js", "Open-Weather Api",],
+      deployment: ["Vercel",  "GitHub "]
+    },
+    image: "../../projects/wt1.png",
+    gallery: [
+      "../../projects/wt1.png",
+      "../../projects/wt2.png",
       
     ],
-    tags: ["Tattoo Shop", "Vite", "Shop Portfolio", "Web Design"],
-    technologies: {
-      frontend: ["TypeScript", "TailwindCSS", "Framer Motion", "Vite","ShadCn UI" ],
-      backend: ["Node.js", "Express", "Firebase",],
-      deployment: ["Vercel"],
-      other: ["Gthub", "Figma"]
-    },
-    image: "../../projects/et1.png",
-    gallery: [
-      "../../projects/et1.png",
-      "../../projects/et2.png",
-      "../../projects/et3.png",
-      "../../projects/et4.png",
-      "../../projects/et5.png",
-      "../../projects/et6.png",
-      "../../projects/et7.png", 
-      "../../projects/et8.png",
-    ],
     github: "https://github.com/arzeynillas18",
-    demo: "https://eternal-canvas.vercel.app/"
+    demo: "https://my-weather-grid.vercel.app/"
   },
-
+  
+  
   {
   id: "info-management-system",
   title: "DigiBayan Information Management System",
@@ -314,34 +308,7 @@ export const projects: Project[] = [
     github: "https://github.com/arzeynillas18",
     demo: ""
   },
-{
-    id: "weather-app",
-    title: "My Weather Grid ",
-    description: "A responsive web app that delivers detailed weather forecasts and environmental data for cities globally, presented in a structured grid layout.",
-    longDescription: "My Weather Grid is a feature-rich weather application that allows users to access a wide range of meteorological data for any city. By entering a city name, users can view current weather conditions, forecasts, and various environmental metrics. The application is designed with a clean, responsive interface, ensuring optimal usability across different devices. It leverages modern web technologies to fetch and display real-time data, providing users with accurate and up-to-date weather information.",
-    features: [
-      "City-Based Weather Search",
-      "Comprehensive Weather Data",
-      "Responsive Grid Layout",
-      "File attachments and comments",
-      "Project analytics and reporting",
-      "Real-Time Data Updates"
-    ],
-    tags: ["Environmental Metrics", "Real-Time Data", "Weather API", "Responsive Design"],
-    technologies: {
-      frontend: ["Next Js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI", "JavaScript", "Radix UI",],
-      backend: ["Node.js", "Open-Weather Api",],
-      deployment: ["Vercel",  "GitHub "]
-    },
-    image: "../../projects/wt1.png",
-    gallery: [
-      "../../projects/wt1.png",
-      "../../projects/wt2.png",
-      
-    ],
-    github: "https://github.com/arzeynillas18",
-    demo: "https://my-weather-grid.vercel.app/"
-  },
+
   {
     id: "property-management system",
     title: "Property Ease Management System",
@@ -378,6 +345,40 @@ export const projects: Project[] = [
     github: "https://github.com/arzeynillas18",
     demo: ""
   },
+  {
+    id: "tatto site",
+    title: "Eternal Canvas A TOUCH OF INK",
+    description: "Eternal Canvas is a tattoo shop web app for booking appointments, exploring designs, and connecting with skilled tattoo artists.",
+    longDescription: "Eternal Canvas is a modern tattoo shop web app that makes it easy for clients to discover tattoo designs, view artist portfolios, and book appointments online. Built for convenience and creativity, it helps users find the perfect artist, schedule sessions, and get inspired — all in one sleek platform. Eternal Canvas enhances the traditional tattoo shop experience by making it faster, easier, and more connected for both clients and artists.",
+    features: [
+      "Online Appointment Booking — Quickly schedule sessions with tattoo artists.",
+      "Artist Portfolios — View artist profiles with sample works and specialties.",
+      "Tattoo Design Gallery — Browse a curated collection of tattoo ideas and inspirations.",
+      "Contact and Consultation Forms — Easy client-artist communication setup.",
+      
+    ],
+    tags: ["Tattoo Shop", "Vite", "Shop Portfolio", "Web Design"],
+    technologies: {
+      frontend: ["TypeScript", "TailwindCSS", "Framer Motion", "Vite","ShadCn UI" ],
+      backend: ["Node.js", "Express", "Firebase",],
+      deployment: ["Vercel"],
+      other: ["Gthub", "Figma"]
+    },
+    image: "../../projects/et1.png",
+    gallery: [
+      "../../projects/et1.png",
+      "../../projects/et2.png",
+      "../../projects/et3.png",
+      "../../projects/et4.png",
+      "../../projects/et5.png",
+      "../../projects/et6.png",
+      "../../projects/et7.png", 
+      "../../projects/et8.png",
+    ],
+    github: "https://github.com/arzeynillas18",
+    demo: "https://eternal-canvas.vercel.app/"
+  },
+
   {
     id: "trucking-rental-services",
     title: "Trucking Rental Services Web App",
