@@ -4,7 +4,7 @@ export interface Experience {
   company: string;
   location: string;
   period: string;
-  description: string;
+  description: string | string [];
   technologies: string[];
 }
 
@@ -14,16 +14,27 @@ export const experiences: Experience[] = [
     company: "Client of the Internet",
     location: "Remote",
     period: "January 2023 - Present",
-    description: "Built modern, responsive UIs using React, Next.js, TypeScript, and JavaScript. Styled interfaces with Tailwind CSS, Material UI, Radix UI, Shadcn UI, and standard HTML5/CSS. Focused on clean design, accessibility, and performance.",
-    technologies: ["React","Vite", "TypeScript","JavasSCript", , "Next.js", "Tailwind CSS", "HTML 5", "CSS", "Material UI", "Radix UI", "Shadcn Ui"]
+    description: [
+      "Completed commissions for students struggling with programming or development tasks.",
+      "Created websites for small businesses, portfolios for students, and digital brand platforms for professionals seeking to showcase their work and services.",
+      "Built modern, responsive UIs using React, Next.js, TypeScript, and JavaScript.",
+      "Styled interfaces with Tailwind CSS, Material UI, Radix UI, Shadcn UI, and standard HTML5/CSS.",
+      
+    ],
+    technologies: ["React", "Vite", "TypeScript", "JavaScript", "Next.js", "Tailwind CSS", "HTML 5", "CSS", "Material UI", "Radix UI", "Shadcn UI"],
   },
   {
     title: "Freelance Full Stack Developer",
     company: "Various Clients of the Internet",
     location: "Remote",
     period: "March 2024 - Present",
-    description: "Built responsive, full-stack web applications using Next.js, JavaScript, SCSS, Node.js, Express.js, Python, Django, and PHP. Integrated MongoDB, PostgreSQL, MySQL, and Firebase for dynamic data handling. Delivered scalable, mobile-friendly solutions with clean, maintainable code.",
-    technologies: ["Next.js", "Vite", "JavaScript", "SCSS", "Firebase", "MongodB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySql" , "Java", "Php"], 
+    description: [
+      "Built full-stack web applications for businesses, schools, and organizations, including websites, systems, and digital platforms.",
+      "Developed modern, scalable solutions using Next.js, JavaScript, Node.js, Express.js,and PHP.",
+      "Integrated MongoDB, PostgreSQL, MySQL, and Firebase to handle dynamic data and provide real-time functionality.",
+      "Focused on clean, maintainable code, performance optimization, and user-friendly design to meet diverse client needs."
+    ],
+    technologies: ["Next.js", "Vite", "JavaScript", "SCSS", "Firebase", "MongoDB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySQL", "Java", "PHP"],
   },
-  
 ];
+
