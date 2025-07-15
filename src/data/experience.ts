@@ -36,5 +36,18 @@ export const experiences: Experience[] = [
     ],
     technologies: ["Next.js", "Vite", "JavaScript", "SCSS", "Firebase", "MongoDB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySQL", "Java", "PHP"],
   },
+  {
+    title: "Facility, Faculty Associate ",
+    company: "Southwestern University Cebu",
+    location: "Cebu City, Philippines",
+    period: "May 2023 - December 2023 ",
+    description: [
+      "Formulated policies, plans, and programs related to procurement, property management, and  maintenance.",
+      "Managed inventory and encoded supplies, ensuring compliance with university regulations and  standards. ",
+      "Oversaw general administrative services, including handling queries and ensuring effective implementation of departmental processes.",
+      "Demonstrated strong organizational and time-management skills by managing multiple tasks simultaneously. ",
+    ],
+    technologies: [],
+  },
 ];
 
