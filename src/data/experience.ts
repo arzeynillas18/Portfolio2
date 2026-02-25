@@ -9,6 +9,40 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
+   {
+    title: "Web App Developer Intern",
+    company: "Myt Soft Dev Solutions",
+    location: "Philippines",
+    period: "2026 – Present",
+    description: [
+      "Contributed to multiple active client systems including ERP, POS, Inventory, HR, and internal management tools.",
+      "Developed and enhanced frontend features across modern and legacy applications using React and TypeScript.",
+      "Built dynamic, reusable, and scalable UI components using various frontend libraries and frameworks.",
+      "Integrated APIs and managed data flow across complex business modules.",
+      "Created interactive dashboards, reports, tables, and forms for operational workflows.",
+      "Implemented PDF generation, printing, and data export functionalities (Excel/CSV).",
+      "Fixed UI/UX issues and improved system responsiveness and performance.",
+      "Collaborated closely with Project Managers and backend developers to deliver new features and system improvements.",
+      "Maintained and developed frontend code in accordance with the company’s required coding standards and development environment."
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Ant Design",
+      "Bootstrap",
+      "Styled Components",
+      "Sass",
+      "Axios",
+      "Formik",
+      "Yup",
+      "Chart.js",
+      "React Data Table",
+      "jsPDF",
+      "html2pdf",
+      "xlsx"
+    ]
+  },
   {
     title: "Freelance Frontend Developer",
     company: "Client of the Internet",
@@ -24,7 +58,7 @@ export const experiences: Experience[] = [
     technologies: ["React", "Vite", "TypeScript", "JavaScript", "Next.js", "Tailwind CSS", "HTML 5", "CSS", "Material UI", "Radix UI", "Shadcn UI"],
   },
   {
-    title: "Freelance Full Stack Developer",
+    title: "Freelance Web App Developer",
     company: "Various Clients of the Internet",
     location: "Remote",
     period: "March 2024 - Present",
@@ -49,5 +83,6 @@ export const experiences: Experience[] = [
     ],
     technologies: [],
   },
+  
 ];
 
