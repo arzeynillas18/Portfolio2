@@ -74,7 +74,7 @@ export default function Home() {
                   <span className="block ">Hi, I'm Arzey</span>
                 </h1>
                 <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-                  Full Stack Software Engineer
+                  Web App & Software Engineer
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-xl">
                   I create modern, accessible web applications that combine
