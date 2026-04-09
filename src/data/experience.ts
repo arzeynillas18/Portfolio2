@@ -10,24 +10,26 @@ export interface Experience {
 
 export const experiences: Experience[] = [
    {
-    title: "Web App Developer Intern",
+    title: "Software Developer Intern",
     company: "Myt Soft Dev Solutions",
     location: "Philippines",
     period: "2026 – Present",
     description: [
-      "Contributed to multiple active client systems including ERP, POS, Inventory, HR, and internal management tools.",
-      "Developed and enhanced frontend features across modern and legacy applications using React and TypeScript.",
-      "Built dynamic, reusable, and scalable UI components using various frontend libraries and frameworks.",
-      "Integrated APIs and managed data flow across complex business modules.",
-      "Created interactive dashboards, reports, tables, and forms for operational workflows.",
+      "Contributed to and collaborated on major enterprise systems and personal software projects, including ERP, POS, Inventory, HR, and internal management platforms, working across the full stack on both frontend and backend layers.",
+      "Developed and delivered frontend features across modern and legacy applications using React, TypeScript, and various UI libraries and frameworks, building dynamic, reusable, and scalable UI components.",
+      "Managed and maintained backend systems, APIs, database management, and server administration at myt, ensuring stability and performance across enterprise-level environments.",
+      "Designed and implemented server-side logic and APIs, managing data flow across complex, multi-module business systems and integrating third-party and internal services.",
+      "Created interactive dashboards, reports, data tables, and operational forms for complex enterprise workflows.",
       "Implemented PDF generation, printing, and data export functionalities (Excel/CSV).",
-      "Fixed UI/UX issues and improved system responsiveness and performance.",
-      "Collaborated closely with Project Managers and backend developers to deliver new features and system improvements.",
-      "Maintained and developed frontend code in accordance with the company’s required coding standards and development environment."
+      "Optimized system responsiveness and performance, and resolved UI/UX issues across multiple platforms.",
+      "Collaborated closely with Project Managers, developers, and cross-functional teams to deliver features and system improvements.",
+      "Wrote and maintained clean, scalable code aligned with project architecture and organizational coding standards."
     ],
     technologies: [
       "React",
       "TypeScript",
+      "PHP",
+      "CodeIgniter",
       "Material UI",
       "Ant Design",
       "Bootstrap",

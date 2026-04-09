@@ -26,6 +26,8 @@ export const skills: Skill[] = [
   { name: 'MySQL', category: 'backend' },
   { name: 'Firebase', category: 'backend' },
   { name: 'Php', category: 'backend' },
+  { name: 'CodeIgniter', category: 'backend' },
+  
 
 
   // Mobile
@@ -41,6 +43,7 @@ export const skills: Skill[] = [
 
   // Other
   { name: 'Eslint', category: 'other' },
+  { name: 'Axios', category: 'other' },
   { name: 'Npm', category: 'other' },
   { name: 'Github', category: 'other' },
   { name: 'Vs Code', category: 'other' },

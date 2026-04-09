@@ -208,19 +208,22 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-lg">
-                  My name is Arzey Nepomuceno. I am an aspiring professional and
-                  enthusiastic programmer in my daily life. I am a quick learner
-                  with a self-learning attitude. I love to learn and explore new
-                  technologies and am passionate about problem-solving.
+                  Hi, I'm Arzey a Full-Stack Software Engineer with 2+ years of hands-on industry
+                   experience building real systems for real businesses. Most developers my age are still 
+                   learning in classrooms ,I've been in the industry, shipping code that actually gets used.
                 </p>
                 <p className="text-lg">
-                  I love almost all the stacks of web application development
-                  and love to make the web more open to the world.
+                  My work spans the full stack from pixel-perfect, responsive frontends to robust backend architectures, 
+                  API design, and database management. I build whatever the problem demands. Enterprise platforms, business tools, 
+                  client-facing applications, personal projects , if it needs to be built, I build it, end to end.
                 </p>
                 <p className="text-lg">
-                  My core skill is based on JavaScript, and I love to do most of
-                  the things using JavaScript. I am available for any kind of
-                  job opportunity that suits my skills and interests.
+                  I don't chase the spotlight. Once a student, now a professional developer with years of real 
+                  industry exposure .I write clean code, solve hard problems, and keep raising the bar.
+                   My goal is simple to become a genuinely great engineer, the kind that builds things that last and work well.
+                </p>
+                <p>
+                  When I'm not coding, I'm probably with my cat.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -258,15 +261,15 @@ export default function Home() {
                   <p className="text-lg font-medium">Years of Experience</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">20+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">30+</p>
                   <p className="text-lg font-medium">Projects Delivered</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">15+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">20+</p>
                   <p className="text-lg font-medium">Satisfied Clients</p>
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
-                  <p className="text-4xl font-bold text-primary mb-2">15+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">20+</p>
                   <p className="text-lg font-medium">Technologies</p>
                 </div>
               </div>
