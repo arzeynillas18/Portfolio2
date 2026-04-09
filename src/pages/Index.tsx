@@ -218,7 +218,7 @@ export default function Home() {
                   client-facing applications, personal projects , if it needs to be built, I build it, end to end.
                 </p>
                 <p className="text-lg">
-                  I don't chase the spotlight. Once a student, now a professional developer with years of real 
+                  I don't chase the spotlight. Once a working student, now a professional developer with years of real 
                   industry exposure .I write clean code, solve hard problems, and keep raising the bar.
                    My goal is simple to become a genuinely great engineer, the kind that builds things that last and work well.
                 </p>
