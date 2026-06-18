@@ -1,4 +1,3 @@
-
 export interface Experience {
   title: string;
   company: string;
@@ -9,15 +8,50 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
-   {
+  {
+    title: "Full Stack Software Developer",
+    company: "MYT SoftDev Solutions, Inc.",
+    location: "Cebu, Philippines",
+    period: "April 2026 – Present",
+    description: [
+      "Engineered and maintained full-stack features across enterprise-grade systems including ERP, POS, Inventory, HR, and internal management platforms — owning both frontend and backend layers end-to-end.",
+      "Built dynamic, reusable, and scalable UI components using React and TypeScript, delivering responsive interfaces across modern and legacy applications.",
+      "Designed and implemented RESTful APIs and server-side logic to manage data flow across complex, multi-module business systems, integrating third-party and internal services.",
+      "Managed backend systems, database administration, and server infrastructure, ensuring stability, security, and performance across enterprise-level environments.",
+      "Developed interactive dashboards, operational forms, data tables, and reports tailored to complex enterprise workflows.",
+      "Implemented PDF generation, print functionality, and data export pipelines (Excel/CSV) for business reporting needs.",
+      "Optimized system responsiveness and performance, resolving UI/UX inconsistencies across multiple platforms and devices.",
+      "Collaborated closely with Project Managers and cross-functional engineering teams to deliver features, system improvements, and architectural enhancements aligned with organizational coding standards."
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "PHP",
+      "CodeIgniter",
+      "Material UI",
+      "Ant Design",
+      "Bootstrap",
+      "Styled Components",
+      "Sass",
+      "Axios",
+      "Formik",
+      "Yup",
+      "Chart.js",
+      "React Data Table",
+      "jsPDF",
+      "html2pdf",
+      "xlsx"
+    ]
+  },
+  {
     title: "Software Developer Intern",
-    company: "Myt Soft Dev Solutions",
-    location: "Philippines",
-    period: "2026 – Present",
+    company: "MYT SoftDev Solutions, Inc.",
+    location: "Cebu, Philippines",
+    period: "February 2026 – March 2026",
     description: [
       "Contributed to and collaborated on major enterprise systems and personal software projects, including ERP, POS, Inventory, HR, and internal management platforms, working across the full stack on both frontend and backend layers.",
       "Developed and delivered frontend features across modern and legacy applications using React, TypeScript, and various UI libraries and frameworks, building dynamic, reusable, and scalable UI components.",
-      "Managed and maintained backend systems, APIs, database management, and server administration at myt, ensuring stability and performance across enterprise-level environments.",
+      "Managed and maintained backend systems, APIs, database management, and server administration, ensuring stability and performance across enterprise-level environments.",
       "Designed and implemented server-side logic and APIs, managing data flow across complex, multi-module business systems and integrating third-party and internal services.",
       "Created interactive dashboards, reports, data tables, and operational forms for complex enterprise workflows.",
       "Implemented PDF generation, printing, and data export functionalities (Excel/CSV).",
@@ -70,7 +104,7 @@ export const experiences: Experience[] = [
       "Integrated MongoDB, PostgreSQL, MySQL, and Firebase to handle dynamic data and provide real-time functionality.",
       "Focused on clean, maintainable code, performance optimization, and user-friendly design to meet diverse client needs."
     ],
-    technologies: ["Next.js", "Vite", "JavaScript", "SCSS", "Firebase", "MongoDB", "Node.js", "Express.js", "Python", "Django", "PostgreSQL", "MySQL", "Java", "PHP"],
+    technologies: ["Next.js", "Vite", "JavaScript", "SCSS", "Firebase", "MongoDB", "Node.js", "Express.js", "Python", "PostgreSQL", "MySQL", "Java", "PHP"],
   },
   {
     title: "Facility, Faculty Associate ",
@@ -87,4 +121,3 @@ export const experiences: Experience[] = [
   },
   
 ];
-
